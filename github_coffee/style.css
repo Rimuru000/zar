@@ -1,8 +1,56 @@
 body{
-    background-color: #0b3935;
+    background-color: #0b3935 ;
 }
-
-div.back {
-    width: 100px;
-    height: 100px;
-}
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Other styles for the header */
+  }
+  
+  p {
+    font-family: 'Didact Gothic', sans-serif;
+  }
+  h1 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  .navbar-brand {
+    margin-top: -8px;
+  }
+  nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: -8px;
+  }
+  
+  ul {
+    font-family: 'Alegreya Sans', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 10px;
+  }
+  
+  a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 25px; /* Adjust the font size as needed */
+    transition: color 0.3s ease; /* Add transition for smooth effect */
+  }
+  
+  a:hover {
+    color: #dfdbb6; /* Change the font color on hover */
+  }
+  
+  
