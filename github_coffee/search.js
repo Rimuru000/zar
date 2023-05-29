@@ -4,7 +4,7 @@ const products = [
     { 
       name: 'Cup of Coffee',
       category: 'coffee',
-      image: 'cup_of_coffee.jpg',
+      image: 'starbuckss1.png',
       characteristics: ['Capacity: 250ml', 'Material: Ceramic']
     },
     { 
