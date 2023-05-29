@@ -2,10 +2,7 @@
     background-color:  #0b3935;
     color: #dfdbb6;
  }
- body{
-    background-color:  #0b3935;
-    color: #dfdbb6;
- }
+ 
  .search-container {
     display: flex;
     align-items: center;
@@ -30,8 +27,7 @@
     padding: 5px 10px;
     margin-left: 290px;
     width: 150px;
-    background-color: #dfdbb6;
-    border-color: #dfdbb6;
+  
   }
   
   #search-btn:active {
@@ -46,7 +42,19 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 20px;
-    margin: 100px;
+  }
+
+/* Define the fixed width and height for the image elements */
+.card-img-top {
+    width: 400px; /* Adjust the width as needed */
+    height: 500px; /* Adjust the height as needed */
+    object-fit: cover; /* Maintain the aspect ratio and crop if necessary */
+  }
+  .card-title {
+    color: #333333; /* Replace #ff0000 with your desired color value */
+  }
+  .card-text {
+    color: #333333; /* Замените #ff0000 на желаемый цвет */
   }
   
   .navbar-brand {
@@ -92,3 +100,21 @@
   a:hover {
     color: #dfdbb6; /* Change the font color on hover */
   }
+  @media (min-width: 992px) {
+    #product-container {
+      grid-template-columns: repeat(4, minmax(200px, 1fr));
+    }
+  }
+  
+  @media (max-width: 991px) {
+    #product-container {
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #product-container {
+      grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+  }
+  
