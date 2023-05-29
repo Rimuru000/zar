@@ -1,8 +1,136 @@
-body{
+#my-body {
     background-color: #0b3935;
-}
+  }
 
-div.back {
-    width: 100px;
-    height: 100px;
-}
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .responsive-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Другие стили для шапки */
+  }
+
+  p {
+    font-family: 'Didact Gothic', sans-serif;
+  }
+
+  h1 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .navbar-brand {
+    margin-top: -8px;
+  }
+
+  nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: -1px;
+    margin-right: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    color: #fff;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #dfdbb6; /* Цвет текста при наведении */
+  }
+
+  ul {
+    font-family: 'Alegreya Sans', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  li {
+    margin-right: 10px;
+  }
+
+  a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 25px; /* Подстройте размер шрифта по необходимости */
+    transition: color 0.3s ease; /* Добавляем плавный переход */
+  }
+
+  a:hover {
+    color: #dfdbb6; /* Изменяем цвет шрифта при наведении */
+  }
+
+  /* Добавленные стили для адаптивного навбара */
+  @media screen and (max-width: 768px) {
+    nav .navbar-nav {
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    nav .navbar-nav .nav-item {
+      margin-bottom: 10px;
+    }
+
+    nav .navbar-nav .nav-link {
+      padding: 15px;
+      font-size: 18px;
+    }
+
+    nav .navbar-nav .nav-link:hover {
+      background-color: #dfdbb6;
+      color: #000;
+    }
+
+    nav .navbar-toggler {
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+      color: #fff;
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 30px;
+    }
+
+    nav .navbar-toggler:hover {
+      color: #dfdbb6;
+    }
+
+    nav .collapsed {
+      max-height: 0;
+    }
+
+    nav .sticky {
+      position: fixed;
+    }
+  }
