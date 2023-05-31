@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
   }
 
   .responsive-image {
@@ -27,6 +28,7 @@
     font-family: 'Didact Gothic', sans-serif;
     background-color:  #0b3935;
     color: #dfdbb6;
+    animation: fadeIn 1s ease-in-out;
   }
 
   h1 {
@@ -36,6 +38,7 @@
     color: #dfdbb6;
     text-align: center;
     padding: 20px;
+  
   }
 
   h3 {
@@ -44,6 +47,7 @@
     background-color:  #0b3935;
     color: #dfdbb6;
     padding: 20px;
+    animation: fadeIn 1s ease-in-out;
   }
 
   .navbar-brand {
@@ -157,23 +161,19 @@
     font-size: 1.2rem;
   }
 
-  @keyframes title {
-    from {
-      transform: translateX(-300px);
-    }
-    to {
-      transform: translateX(0);
-    }
-    
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .text {
+    animation: fadeIn 1s ease-in-out;
   }
 
   .title {
     background-color:  #0b3935;
     color: #dfdbb6;
-    animation-name: title;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 1s;
+    animation: fadeIn 1s ;
   }
 
   @keyframes title {

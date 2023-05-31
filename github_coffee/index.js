@@ -42,6 +42,16 @@ function getCookie(c_name)
 var song = document.getElementsByTagName('audio')[0];
 var played = false;
 var tillPlayed = getCookie('timePlayed');
+function toggleMute() {
+  if (song.muted) {
+    song.muted = false;
+    document.getElementById('muteButton').innerText = 'Mute';
+  } else {
+    song.muted = true;
+    document.getElementById('muteButton').innerText = 'Unmute';
+  }
+}
+
 function update()
 {
     if(!played){
