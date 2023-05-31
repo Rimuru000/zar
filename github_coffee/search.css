@@ -100,6 +100,10 @@
   a:hover {
     color: #dfdbb6; /* Change the font color on hover */
   }
+  .about_us {
+    margin-top: 30px;
+    text-align: center;
+  }
   @media (min-width: 992px) {
     #product-container {
       grid-template-columns: repeat(4, minmax(200px, 1fr));
