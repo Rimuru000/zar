@@ -338,5 +338,9 @@
   .otstup {
     margin-top: 100%;
   }
-
- 
+  
+  label {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #dfdbb6;
+    animation: fadeIn 1s ease-in-out;
+  }
