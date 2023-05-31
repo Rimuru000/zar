@@ -32,11 +32,12 @@ const products = [
       characteristics: ['Weight: 500g', 'Type: Arabica']
     },
     { 
-      name: 'Expresso Roast(Beans)',
+      name: 'Breakfast Blend(Beans)',
       category: 'packet',
       image: 'images/beanss2.png',
-      characteristics: ['Weight: 250g', 'Roast Level: Medium']
+      characteristics: ['Weight: 500g', 'Type: Arabica']
     },
+    
     { 
       name: 'Coffee Machine SMEG',
       category: 'machine',
