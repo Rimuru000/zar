@@ -1,7 +1,9 @@
 function validateForm() {
     let Username = document.forms[0]["Username"].value;
     let password = document.forms[0]["password"].value;
-
+    let birthDate = document.forms[0]["birthDate"].value;
+    let firstName = document.forms[0]["first_name"].value;
+    let lastName = document.forms[0]["last_name"].value;
 if (!Username.includes("@")) {
     alert("Please enter valid emal, that includes @ at the begining")
     return false;
@@ -9,6 +11,25 @@ if (!Username.includes("@")) {
 
 if (!password.match(/^[a-zA-Z]+$/)) {
     alert("Password can only contain letters from a-z, A-Z, and numbers");
+    return false;
+}
+
+if (!firstName.match(/^[a-zA-Z]+$/)) {
+    alert("First name can only contain letters from a-z.");
+    return false;
+}
+
+
+if (!lastName.match(/^[a-zA-Z]+$/)) {
+    alert("Last name can only contain letters from a-z.");
+    return false;
+}
+
+let today = new Date();
+
+let inputDate = new Date(birthDate);
+if (inputDate > today) {
+    alert("Please enter a valid birth date.");
     return false;
 }
 

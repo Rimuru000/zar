@@ -11,8 +11,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
-<body id="my-body">
-    
+<body id="my-bod">
+ 
     <header>
         <nav id="navbar" class="navbar navbar-expand-sm fixed-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -43,13 +43,65 @@
         </div>
       </nav>
     </header>
-    <br> <br> <br> <br>
-    <h1>Welcome to CCD!!!</h1>
+    <br>
+    
     <div class="reg">
 
         <div class="login-box">
  
             <form>
+              <div class="user-box">
+                <input type="text" name="first_name" required="">
+                <label>First name</label>
+              </div>
+              <div class="user-box">
+                <input type="text" name="last_name" required="">
+                <label>Last name</label>
+              </div>
+              <div class="user-box">
+                <input type="date" name="birthDate">
+                <label>Date of Birth</label>
+              </div>
+                <div class="checkbox">
+                <div class="radio-grid">
+                <h4>I'm a:</h4>
+                <div>
+                    <input type="radio" name="title_am" value="Mr." required>
+                    <label>Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="title_am" value="Mrs.">
+                    <label>Female</label>
+                </div>
+                <div>
+                    <input type="radio" name="title_am" value="Ms.">
+                    <label>Other creature</label>
+                </div>
+              </div>
+            </div>
+<br>
+            <div class="checkbox">
+              <div class="radio-grid">
+              <h4>I would like to find:</h4>
+              <div>
+                  <input type="checkbox" name="title_am" value="Mr." required>
+                  <label>Coffee</label>
+              </div>
+              <div>
+                  <input type="checkbox" name="title_am" value="Mrs.">
+                  <label>Coffee machines</label>
+              </div>
+              <div>
+                  <input type="checkbox" name="title_am" value="Ms.">
+                  <label>Coffee Beans</label>
+              </div>
+              <div>
+                <input type="checkbox" name="title_am" value="Ms.">
+                <label>Our brand accessories</label>
+            </div>
+            </div>
+          </div>
+            <br>
               <div class="user-box">
                 <input type="text" name="Username" required="">
                 <label>Email</label>
@@ -57,7 +109,9 @@
               <div class="user-box">
                 <input type="password" name="password" required="">
                 <label>Password</label>
-              </div><center>
+              </div>
+             
+              <center>
               <a href="#">
                 <button type="button" style="border-color:#eef3ee ; width: 50px; border: 15px;" onclick="validateForm()">Send</button>
                  <span></span>
